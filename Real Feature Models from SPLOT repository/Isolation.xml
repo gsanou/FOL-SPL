@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and mandatory="true" name="Isolation">
+				<feature mandatory="true" name="QoS"/>
+				<and mandatory="true" name="Integral">
+					<or mandatory="true" name="rangeproblem">
+						<feature mandatory="true" name="alwaystakelowervalue"/>
+						<feature mandatory="true" name="takecloserone"/>
+					</or>
+					<feature mandatory="true" name="terminationintegral"/>
+					<feature mandatory="true" name="generaltermination"/>
+					<feature mandatory="true" name="referenceworkload"/>
+					<and mandatory="true" name="incrementanddecrement">
+						<and mandatory="true" name="E_commercesystem">
+							<and name="Manufacturerscatalogue">
+								<and mandatory="true" name="Manufacturercategories">
+									<alt mandatory="true" name="a1">
+										<feature mandatory="true" name="a2"/>
+										<feature mandatory="true" name="a3"/>
+									</alt>
+									<alt mandatory="true" name="a4">
+										<and mandatory="true" name="a5">
+											<and mandatory="true" name="a7">
+												<feature mandatory="true" name="a8"/>
+											</and>
+										</and>
+										<feature mandatory="true" name="a6"/>
+									</alt>
+								</and>
+							</and>
+						</and>
+					</and>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<eq>
+					<var>a2</var>
+					<var>a3</var>
+				</eq>
+			</rule>
+			<rule>
+				<eq>
+					<var>a8</var>
+					<var>a6</var>
+				</eq>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

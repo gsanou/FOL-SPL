@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<or mandatory="true" name="computers">
+				<and mandatory="true" name="E_commercesystem">
+					<and name="Manufacturerscatalogue">
+						<and mandatory="true" name="Manufacturercategories">
+							<alt mandatory="true" name="a1">
+								<feature mandatory="true" name="a2"/>
+								<feature mandatory="true" name="a3"/>
+							</alt>
+							<alt mandatory="true" name="a4">
+								<and mandatory="true" name="a5">
+									<and mandatory="true" name="a7">
+										<feature mandatory="true" name="a8"/>
+									</and>
+								</and>
+								<feature mandatory="true" name="a6"/>
+							</alt>
+							<and mandatory="true" name="a9">
+								<feature mandatory="true" name="a10"/>
+								<feature name="a11"/>
+							</and>
+						</and>
+						<and mandatory="true" name="Manufacturer">
+							<and mandatory="true" name="Title">
+								<and mandatory="true" name="a12">
+									<and name="a13">
+										<feature name="a15"/>
+									</and>
+									<and mandatory="true" name="a14">
+										<feature mandatory="true" name="a16"/>
+										<feature name="a17"/>
+									</and>
+								</and>
+								<and mandatory="true" name="a18">
+									<feature name="a19"/>
+									<and mandatory="true" name="a20">
+										<feature mandatory="true" name="a21"/>
+									</and>
+								</and>
+								<and mandatory="true" name="a22">
+									<feature name="a24"/>
+								</and>
+								<and mandatory="true" name="a23">
+									<feature mandatory="true" name="a25"/>
+								</and>
+							</and>
+							<feature name="Photos"/>
+							<and mandatory="true" name="Description">
+								<and mandatory="true" name="a26">
+									<feature mandatory="true" name="a27"/>
+									<feature mandatory="true" name="a28"/>
+								</and>
+							</and>
+						</and>
+					</and>
+				</and>
+				<or mandatory="true" name="Tipo">
+					<feature mandatory="true" name="Computador_mesa"/>
+					<feature mandatory="true" name="Portatil"/>
+					<feature mandatory="true" name="Servidor"/>
+				</or>
+				<or mandatory="true" name="Marca">
+					<feature mandatory="true" name="Dell"/>
+					<feature mandatory="true" name="Toshiba"/>
+					<feature mandatory="true" name="Lenovo"/>
+					<feature mandatory="true" name="Apple"/>
+					<feature mandatory="true" name="Clone"/>
+				</or>
+				<or mandatory="true" name="Sistema_Operativo">
+					<or mandatory="true" name="Computadores_personales">
+						<feature mandatory="true" name="Windows_10"/>
+						<feature mandatory="true" name="Fedora_Linux"/>
+					</or>
+					<or mandatory="true" name="Servidores">
+						<feature mandatory="true" name="OSx_Mac"/>
+						<feature mandatory="true" name="Yosemite_Apple"/>
+					</or>
+				</or>
+			</or>
+		</struct>
+		<constraints>
+			<rule>
+				<eq>
+					<var>a2</var>
+					<var>a3</var>
+				</eq>
+			</rule>
+			<rule>
+				<eq>
+					<var>a8</var>
+					<var>a6</var>
+				</eq>
+			</rule>
+			<rule>
+				<imp>
+					<var>a11</var>
+					<var>a10</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>a13</var>
+					<var>a16</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>a19</var>
+					<var>a20</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>a20</var>
+					<var>a21</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>a24</var>
+					<var>a25</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>a26</var>
+					<var>a27</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>a26</var>
+					<var>a28</var>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

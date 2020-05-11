@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featureModel chosenLayoutAlgorithm="1">
+   <struct>
+      <and mandatory="true" name="SmartTV">
+         <and name="Connectivity">
+            <alt name="DLNA">
+               <feature mandatory="true" name="AudioVideoSharing" />
+               <feature mandatory="true" name="DLNA_1" />
+            </alt>
+            <feature mandatory="true" name="Wifi" />
+            <alt name="FollowTV">
+               <feature mandatory="true" name="DMR" />
+               <feature mandatory="true" name="Mirror" />
+            </alt>
+            <and name="WirelessDisplay">
+               <feature name="IntelWidi" />
+               <feature name="Miracast" />
+            </and>
+            <feature name="Netflix" />
+            <alt name="Portal">
+               <feature mandatory="true" name="VSTL" />
+               <feature mandatory="true" name="FXM" />
+               <feature mandatory="true" name="TSB" />
+            </alt>
+            <feature name="HBBTV" />
+            <feature name="VerimatrixWeb" />
+         </and>
+         <and name="a3D">
+            <alt mandatory="true" name="GlassType">
+               <feature mandatory="true" name="ACC" />
+               <feature mandatory="true" name="ENT" />
+            </alt>
+         </and>
+         <or name="CEC">
+            <feature mandatory="true" name="AudioControl" />
+            <feature mandatory="true" name="AutoPowerDown" />
+         </or>
+         <and mandatory="true" name="MediaBrowser">
+            <or mandatory="true" name="VideoPlay">
+               <feature mandatory="true" name="MKV" />
+               <feature mandatory="true" name="AVI" />
+               <feature mandatory="true" name="WMA" />
+               <feature mandatory="true" name="WMV" />
+            </or>
+            <and mandatory="true" name="AudioPlay">
+               <feature mandatory="true" name="MP3" />
+            </and>
+            <or mandatory="true" name="PicturePreview">
+               <feature mandatory="true" name="PNG" />
+               <feature mandatory="true" name="JPG" />
+               <feature mandatory="true" name="BMP" />
+            </or>
+         </and>
+         <or name="Bluetooth">
+            <feature mandatory="true" name="Headset" />
+            <feature mandatory="true" name="ShutterGlass" />
+         </or>
+         <or mandatory="true" name="EPG">
+            <feature mandatory="true" name="TimelineSchedule" />
+            <feature mandatory="true" name="ListSchedule" />
+            <feature mandatory="true" name="NowandNext" />
+         </or>
+         <or mandatory="true" name="HDMI">
+            <feature mandatory="true" name="a1" />
+            <feature mandatory="true" name="a2" />
+            <feature mandatory="true" name="a3" />
+            <feature mandatory="true" name="a4" />
+         </or>
+         <alt mandatory="true" name="Keypad">
+            <feature mandatory="true" name="a146" />
+            <feature mandatory="true" name="cy" />
+            <feature mandatory="true" name="f" />
+            <feature mandatory="true" name="a145" />
+            <feature mandatory="true" name="a148" />
+            <feature mandatory="true" name="a147" />
+         </alt>
+         <alt mandatory="true" name="RC">
+            <feature mandatory="true" name="a12" />
+            <feature mandatory="true" name="a14" />
+            <feature mandatory="true" name="w3" />
+            <feature mandatory="true" name="y78" />
+            <feature mandatory="true" name="a45" />
+            <feature mandatory="true" name="a4565" />
+            <feature mandatory="true" name="er34" />
+            <feature mandatory="true" name="yu8" />
+            <feature mandatory="true" name="a12s" />
+            <feature mandatory="true" name="a14x" />
+            <feature mandatory="true" name="a34s" />
+            <feature mandatory="true" name="a34" />
+            <feature mandatory="true" name="a2846" />
+         </alt>
+         <or mandatory="true" name="Sources">
+            <feature mandatory="true" name="hdmi" />
+            <feature mandatory="true" name="scart" />
+            <feature mandatory="true" name="dvd" />
+            <feature mandatory="true" name="scarts" />
+            <feature mandatory="true" name="scart2" />
+            <feature mandatory="true" name="scart2s" />
+            <feature mandatory="true" name="fav" />
+            <feature mandatory="true" name="pc" />
+            <feature mandatory="true" name="tv" />
+            <feature mandatory="true" name="ypbpr" />
+            <feature mandatory="true" name="widi" />
+            <feature mandatory="true" name="ipcam" />
+         </or>
+         <feature name="AmblightSensor" />
+         <feature name="AudioDescription" />
+         <alt mandatory="true" name="AutoTVOff">
+            <feature mandatory="true" name="a4hr" />
+            <feature mandatory="true" name="a5hr" />
+            <feature mandatory="true" name="a6hr" />
+            <feature mandatory="true" name="a7hr" />
+            <feature mandatory="true" name="a8hr" />
+            <feature mandatory="true" name="Off" />
+         </alt>
+         <feature name="Bootlogo" />
+         <feature name="DualViewSupport" />
+         <feature name="TwinTuner" />
+         <and mandatory="true" name="E_commercesystem">
+            <and name="Manufacturerscatalogue">
+               <and mandatory="true" name="Manufacturercategories">
+                  <alt mandatory="true" name="a_1">
+                     <feature mandatory="true" name="a_2" />
+                     <feature mandatory="true" name="a_3" />
+                  </alt>
+                  <alt mandatory="true" name="a_4">
+                     <and mandatory="true" name="a_5">
+                        <and mandatory="true" name="a_7">
+                           <feature mandatory="true" name="a_8" />
+                        </and>
+                     </and>
+                     <feature mandatory="true" name="a_6" />
+                  </alt>
+                  <and mandatory="true" name="a_9">
+                     <feature mandatory="true" name="a_10" />
+                     <feature name="a_11" />
+                  </and>
+               </and>
+               <and mandatory="true" name="Manufacturer">
+                  <and mandatory="true" name="Title">
+                     <and mandatory="true" name="a_12">
+                        <and name="a_13">
+                           <feature name="a_15" />
+                        </and>
+                        <and mandatory="true" name="a_14">
+                           <feature mandatory="true" name="a_16" />
+                           <feature name="a_17" />
+                        </and>
+                     </and>
+                     <and mandatory="true" name="a_18">
+                        <feature name="a_19" />
+                        <and mandatory="true" name="a_20">
+                           <feature mandatory="true" name="a_21" />
+                        </and>
+                     </and>
+                     <and mandatory="true" name="a_22">
+                        <feature name="a_24" />
+                     </and>
+                     <and mandatory="true" name="a_23">
+                        <feature mandatory="true" name="a_25" />
+                     </and>
+                  </and>
+                  <feature name="Photos" />
+                  <and mandatory="true" name="Description">
+                     <and mandatory="true" name="a_26">
+                        <feature mandatory="true" name="a_27" />
+                        <feature mandatory="true" name="a_28" />
+                     </and>
+                     <and mandatory="true" name="a_29">
+                        <and mandatory="true" name="a_30">
+                           <feature mandatory="true" name="a_32" />
+                        </and>
+                        <feature name="a_31" />
+                     </and>
+                     <and mandatory="true" name="a_33">
+                        <and mandatory="true" name="a_34">
+                           <feature mandatory="true" name="a_36" />
+                        </and>
+                        <and name="a_35">
+                           <feature mandatory="true" name="a_37" />
+                        </and>
+                     </and>
+                  </and>
+                  <and mandatory="true" name="Products">
+                     <and mandatory="true" name="a_38">
+                        <and mandatory="true" name="a_39">
+                           <feature mandatory="true" name="a_41" />
+                        </and>
+                        <and name="a_40">
+                           <feature mandatory="true" name="a_42" />
+                        </and>
+                     </and>
+                     <and mandatory="true" name="a_43">
+                        <and mandatory="true" name="a_44">
+                           <feature mandatory="true" name="a_46" />
+                        </and>
+                        <and mandatory="true" name="a_45">
+                           <feature mandatory="true" name="a_47" />
+                        </and>
+                     </and>
+                  </and>
+               </and>
+            </and>
+            <and mandatory="true" name="Productscatalogue">
+               <and mandatory="true" name="Productcategories">
+                  <and mandatory="true" name="a_48">
+                     <and mandatory="true" name="a_49">
+                        <feature mandatory="true" name="a_51" />
+                     </and>
+                     <feature name="a_50" />
+                  </and>
+                  <and mandatory="true" name="a_52">
+                     <and mandatory="true" name="a_53">
+                        <feature mandatory="true" name="a_55" />
+                     </and>
+                     <and name="a_54">
+                        <feature mandatory="true" name="a_56" />
+                     </and>
+                  </and>
+                  <feature name="a_61" />
+                  <feature mandatory="true" name="a_57" />
+                  <feature mandatory="true" name="a_58" />
+               </and>
+               <and mandatory="true" name="Productitems">
+                  <feature mandatory="true" name="a_60" />
+               </and>
+               <and mandatory="true" name="Productvariations">
+                  <feature name="a_62" />
+                  <feature mandatory="true" name="a_59" />
+                  <and mandatory="true" name="a_63">
+                     <and mandatory="true" name="a_64">
+                        <feature mandatory="true" name="a_65" />
+                     </and>
+                  </and>
+                  <and mandatory="true" name="a_66">
+                     <and mandatory="true" name="a_67">
+                        <feature mandatory="true" name="a_68" />
+                     </and>
+                  </and>
+               </and>
+            </and>
+            <and mandatory="true" name="1_E_commercesystem">
+               <and name="1_Manufacturerscatalogue">
+                  <and mandatory="true" name="1_Manufacturercategories">
+                     <alt mandatory="true" name="1_a1">
+                        <feature mandatory="true" name="1_a2" />
+                        <feature mandatory="true" name="1_a3" />
+                     </alt>
+                     <alt mandatory="true" name="1_a4">
+                        <and mandatory="true" name="1_a5">
+                           <and mandatory="true" name="1_a7">
+                              <feature mandatory="true" name="1_a8" />
+                           </and>
+                        </and>
+                        <feature mandatory="true" name="1_a6" />
+                     </alt>
+                     <and mandatory="true" name="1_a9">
+                        <feature mandatory="true" name="1_a10" />
+                        <feature name="1_a11" />
+                     </and>
+                  </and>
+                  <and mandatory="true" name="1_Manufacturer">
+                     <and mandatory="true" name="1_Title">
+                        <and mandatory="true" name="1_a12">
+                           <and name="1_a13">
+                              <feature name="1_a15" />
+                           </and>
+                           <and mandatory="true" name="1_a14">
+                              <feature mandatory="true" name="1_a16" />
+                              <feature name="1_a17" />
+                           </and>
+                        </and>
+                        <and mandatory="true" name="1_a18">
+                           <feature name="1_a19" />
+                           <and mandatory="true" name="1_a20">
+                              <feature mandatory="true" name="1_a21" />
+                           </and>
+                        </and>
+                        <and mandatory="true" name="1_a22">
+                           <feature name="1_a24" />
+                        </and>
+                        <and mandatory="true" name="1_a23">
+                           <feature mandatory="true" name="1_a25" />
+                        </and>
+                     </and>
+                     <feature name="1_Photos" />
+                     <and mandatory="true" name="1_Description">
+                        <and mandatory="true" name="1_a26">
+                           <feature mandatory="true" name="1_a27" />
+                           <feature mandatory="true" name="1_a28" />
+                        </and>
+                        <and mandatory="true" name="1_a29">
+                           <and mandatory="true" name="1_a30">
+                              <feature mandatory="true" name="1_a32" />
+                           </and>
+                           <feature name="1_a31" />
+                        </and>
+                        <and mandatory="true" name="1_a33">
+                           <and mandatory="true" name="1_a34">
+                              <feature mandatory="true" name="1_a36" />
+                           </and>
+                           <and name="1_a35">
+                              <feature mandatory="true" name="1_a37" />
+                           </and>
+                        </and>
+                     </and>
+                     <and mandatory="true" name="1_Products">
+                        <and mandatory="true" name="1_a38">
+                           <and mandatory="true" name="1_a39">
+                              <feature mandatory="true" name="1_a41" />
+                           </and>
+                           <and name="1_a40">
+                              <feature mandatory="true" name="1_a42" />
+                           </and>
+                        </and>
+                        <and mandatory="true" name="1_a43">
+                           <and mandatory="true" name="1_a44">
+                              <feature mandatory="true" name="1_a46" />
+                           </and>
+                           <and mandatory="true" name="1_a45">
+                              <feature mandatory="true" name="1_a47" />
+                           </and>
+                        </and>
+                     </and>
+                  </and>
+               </and>
+            </and>
+         </and>
+      </and>
+   </struct>
+   <constraints>
+      <rule>
+         <eq>
+            <var>a_2</var>
+            <var>a_3</var>
+         </eq>
+      </rule>
+      <rule>
+         <eq>
+            <var>a_8</var>
+            <var>a_6</var>
+         </eq>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_11</var>
+            <var>a_10</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_13</var>
+            <var>a_16</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_19</var>
+            <var>a_20</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_20</var>
+            <var>a_21</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_24</var>
+            <var>a_25</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_26</var>
+            <var>a_27</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_26</var>
+            <var>a_28</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_30</var>
+            <var>a_31</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_32</var>
+            <var>a_31</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_36</var>
+            <var>a_35</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_36</var>
+            <var>a_37</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_39</var>
+            <var>a_40</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_41</var>
+            <var>a_42</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_46</var>
+            <var>a_45</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_46</var>
+            <var>a_47</var>
+         </imp>
+      </rule>
+      <rule>
+         <eq>
+            <var>a_49</var>
+            <var>a_50</var>
+         </eq>
+      </rule>
+      <rule>
+         <eq>
+            <var>a_51</var>
+            <var>a_50</var>
+         </eq>
+      </rule>
+      <rule>
+         <eq>
+            <var>a_53</var>
+            <var>a_54</var>
+         </eq>
+      </rule>
+      <rule>
+         <eq>
+            <var>a_55</var>
+            <var>a_56</var>
+         </eq>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_57</var>
+            <var>a_58</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_58</var>
+            <var>a_59</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_59</var>
+            <var>a_57</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_60</var>
+            <var>a_61</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_61</var>
+            <var>a_62</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_60</var>
+            <var>a_62</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_63</var>
+            <var>a_65</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>a_68</var>
+            <var>a_66</var>
+         </imp>
+      </rule>
+      <rule>
+         <eq>
+            <var>1_a2</var>
+            <var>1_a3</var>
+         </eq>
+      </rule>
+      <rule>
+         <eq>
+            <var>1_a8</var>
+            <var>1_a6</var>
+         </eq>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a11</var>
+            <var>1_a10</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a13</var>
+            <var>1_a16</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a19</var>
+            <var>1_a20</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a20</var>
+            <var>1_a21</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a24</var>
+            <var>1_a25</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a26</var>
+            <var>1_a27</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a26</var>
+            <var>1_a28</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a30</var>
+            <var>1_a31</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a32</var>
+            <var>1_a31</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a36</var>
+            <var>1_a35</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a36</var>
+            <var>1_a37</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a39</var>
+            <var>1_a40</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a41</var>
+            <var>1_a42</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a46</var>
+            <var>1_a45</var>
+         </imp>
+      </rule>
+      <rule>
+         <imp>
+            <var>1_a46</var>
+            <var>1_a47</var>
+         </imp>
+      </rule>
+   </constraints>
+   <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true" />
+   <comments />
+   <featureOrder userDefined="false" />
+</featureModel>
